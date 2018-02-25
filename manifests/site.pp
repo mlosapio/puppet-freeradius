@@ -11,7 +11,7 @@ define freeradius::site (
   Array[String] $post_auth    = [],
   Array[String] $pre_proxy    = [],
   Array[String] $post_proxy   = [],
-  Array[Hash] $listen         = [],
+              $listen         = [],
 ) {
   $fr_package  = $::freeradius::params::fr_package
   $fr_service  = $::freeradius::params::fr_service
